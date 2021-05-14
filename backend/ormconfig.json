@@ -1,0 +1,8 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 57657,
+    "username": "postgres",
+    "password": "22050802",
+    "database": "crudAngular"
+}
