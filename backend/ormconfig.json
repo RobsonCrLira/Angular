@@ -1,8 +1,11 @@
 {
     "type": "postgres",
     "host": "localhost",
-    "port": 57657,
+    "port": 49729,
     "username": "postgres",
     "password": "22050802",
-    "database": "crudAngular"
+    "database": "crudAngular",
+    "entities": [
+        "../src/models/**.ts"
+    ]
 }

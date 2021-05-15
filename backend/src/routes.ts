@@ -1,10 +1,15 @@
 import { Router } from 'express';
-import { PeopleCreate } from './controller/PeopleCreate';
+import { PeopleController } from './controller/PeopleCreate';
+
 
 const router = Router()
-const peoplecreate = new PeopleCreate()
+const peopleCRUD = new PeopleController()
 
-router.get("/", peoplecreate.execute);
+router.post("/", peopleCRUD.createPeople);
+router.post("/:id", peopleCRUD.updatePeople);
+router.post("/:id", peopleCRUD.deletePeople);
+router.post("/:id", peopleCRUD.getPeople);
+router.post("/", peopleCRUD.listPeople);
 
 
 export { router }
