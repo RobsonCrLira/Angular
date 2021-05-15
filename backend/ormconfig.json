@@ -1,11 +1,12 @@
 {
     "type": "postgres",
     "host": "localhost",
-    "port": 49729,
-    "username": "postgres",
-    "password": "22050802",
-    "database": "crudAngular",
+    "port": "{sua porta}",
+    "username": "{seu username}",
+    "password": "{sua senha}",
+    "database": "{seu database}",
     "entities": [
-        "../src/models/**.ts"
-    ]
+        "dist/src/models/**.js"
+    ],
+    "synchonize": true
 }
